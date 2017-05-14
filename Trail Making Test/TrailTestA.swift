@@ -8,17 +8,14 @@
 
 import SpriteKit
 
-//private let kAnimalNodeName = "movable"
-var movableNode : SKNode?
-var anchor = SKSpriteNode()
-var originNode = SKSpriteNode()
-var destinyNode = SKSpriteNode()
-var destinyIndex : Int?
-var line = SKShapeNode()
-
-class GameScene: SKScene {
-    //let background = SKSpriteNode(imageNamed: "blue-shooting-stars")
-    //var selectedNode = SKSpriteNode()
+class TrailTestA: SKScene {
+    
+    var movableNode : SKNode?
+    var anchor = SKSpriteNode()
+    var originNode = SKSpriteNode()
+    var destinyNode = SKSpriteNode()
+    var destinyIndex : Int?
+    var line = SKShapeNode()
     
     override init(size: CGSize) {
         super.init(size: size)
@@ -26,34 +23,8 @@ class GameScene: SKScene {
         self.backgroundColor = UIColor.white
         self.anchorPoint = CGPoint(x: 0, y: 1)
         
-        var coordinates = [String]()
-        
-        // Gets nodes coordinates from text file
-        if let path = Bundle.main.path(forResource: "TestA", ofType: "txt") {
-            do {
-                let data = try String(contentsOfFile: path, encoding: .utf8)
-                coordinates = data.components(separatedBy: .whitespacesAndNewlines)
-            } catch {
-                print(error)
-            }
-        }
-
-        //Populates screen with numbered nodes
-        for i in 1..<25 {
-            
-            let imageName = "node\(i)"
-            let sprite = SKSpriteNode(imageNamed: imageName)
-            sprite.name = imageName
-            
-            let xPos = Float(coordinates[i*2])!
-            let yPos = (Float(coordinates[i*2+1]))! * -1
-                
-            sprite.position = CGPoint(x: CGFloat(xPos) + sprite.size.width/2,
-                                      y: CGFloat(yPos) - sprite.size.height/2)
-
-            sprite.zPosition = CGFloat(i * -2)
-            self.addChild(sprite)
-        }
+        //Populate screen with number nodes
+        self.createNumberNodes()
         
         //Sets first origin and destiny node
         originNode = self.childNode(withName: "node1") as! SKSpriteNode
@@ -156,6 +127,10 @@ class GameScene: SKScene {
                     line.removeFromParent()
                     anchor.removeFromParent()
                     print("GG Test")
+                    let menuScene = MenuScene(size: (view?.bounds.size)!)
+                    let transition = SKTransition.fade(withDuration: 1)
+                    view?.presentScene(menuScene, transition: transition)
+
                 }
             }
         }
@@ -166,6 +141,38 @@ class GameScene: SKScene {
         if touches.first != nil {
             movableNode = nil
         }
+    }
+    
+    func createNumberNodes(){
+        var coordinates = [String]()
+        
+        // Gets nodes coordinates from text file
+        if let path = Bundle.main.path(forResource: "TestA", ofType: "txt") {
+            do {
+                let data = try String(contentsOfFile: path, encoding: .utf8)
+                coordinates = data.components(separatedBy: .whitespacesAndNewlines)
+            } catch {
+                print(error)
+            }
+        }
+        
+        //Populates screen with numbered nodes
+        for i in 1..<25 {
+            
+            let imageName = "node\(i)"
+            let sprite = SKSpriteNode(imageNamed: imageName)
+            sprite.name = imageName
+            
+            let xPos = Float(coordinates[i*2])!
+            let yPos = (Float(coordinates[i*2+1]))! * -1
+            
+            sprite.position = CGPoint(x: CGFloat(xPos) + sprite.size.width/2,
+                                      y: CGFloat(yPos) - sprite.size.height/2)
+            
+            sprite.zPosition = CGFloat(i * -2)
+            self.addChild(sprite)
+        }
+
     }
     
     

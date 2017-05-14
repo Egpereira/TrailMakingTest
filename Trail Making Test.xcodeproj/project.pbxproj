@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		FF252B5F1EC7A59A00F97BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B5E1EC7A59A00F97BCF /* AppDelegate.swift */; };
 		FF252B611EC7A59A00F97BCF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF252B601EC7A59A00F97BCF /* GameScene.sks */; };
-		FF252B631EC7A59A00F97BCF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FF252B621EC7A59A00F97BCF /* Actions.sks */; };
-		FF252B651EC7A59A00F97BCF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B641EC7A59A00F97BCF /* GameScene.swift */; };
+		FF252B651EC7A59A00F97BCF /* TrailTestA.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B641EC7A59A00F97BCF /* TrailTestA.swift */; };
 		FF252B671EC7A59A00F97BCF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B661EC7A59A00F97BCF /* GameViewController.swift */; };
 		FF252B6A1EC7A59A00F97BCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF252B681EC7A59A00F97BCF /* Main.storyboard */; };
-		FF252B6C1EC7A59A00F97BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF252B6B1EC7A59A00F97BCF /* Assets.xcassets */; };
 		FF252B6F1EC7A59A00F97BCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF252B6D1EC7A59A00F97BCF /* LaunchScreen.storyboard */; };
 		FF252B7A1EC7A59B00F97BCF /* Trail_Making_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B791EC7A59B00F97BCF /* Trail_Making_TestTests.swift */; };
 		FF252B851EC7A59B00F97BCF /* Trail_Making_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF252B841EC7A59B00F97BCF /* Trail_Making_TestUITests.swift */; };
+		FF3C5D371EC7DECD0040C2BA /* Nodes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3C5D361EC7DECD0040C2BA /* Nodes.xcassets */; };
+		FF3C5D3B1EC7E2C70040C2BA /* TestA.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF3C5D3A1EC7E2C70040C2BA /* TestA.txt */; };
+		FF3C5D3E1EC80B670040C2BA /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C5D3D1EC80B670040C2BA /* MenuScene.swift */; };
+		FF3C5D401EC811580040C2BA /* TrailTestB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C5D3F1EC811580040C2BA /* TrailTestB.swift */; };
+		FF3C5D421EC8D3890040C2BA /* TestBNumbers.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF3C5D411EC8D3890040C2BA /* TestBNumbers.txt */; };
+		FF3C5D441EC8D4F20040C2BA /* TestBLetters.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF3C5D431EC8D4F20040C2BA /* TestBLetters.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,9 @@
 		FF252B5B1EC7A59A00F97BCF /* Trail Making Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trail Making Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF252B5E1EC7A59A00F97BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF252B601EC7A59A00F97BCF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FF252B621EC7A59A00F97BCF /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		FF252B641EC7A59A00F97BCF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FF252B641EC7A59A00F97BCF /* TrailTestA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTestA.swift; sourceTree = "<group>"; };
 		FF252B661EC7A59A00F97BCF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		FF252B691EC7A59A00F97BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF252B6B1EC7A59A00F97BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF252B6E1EC7A59A00F97BCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF252B701EC7A59A00F97BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF252B751EC7A59B00F97BCF /* Trail Making TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trail Making TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,12 @@
 		FF252B801EC7A59B00F97BCF /* Trail Making TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trail Making TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF252B841EC7A59B00F97BCF /* Trail_Making_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail_Making_TestUITests.swift; sourceTree = "<group>"; };
 		FF252B861EC7A59B00F97BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3C5D361EC7DECD0040C2BA /* Nodes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Nodes.xcassets; sourceTree = "<group>"; };
+		FF3C5D3A1EC7E2C70040C2BA /* TestA.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestA.txt; sourceTree = "<group>"; };
+		FF3C5D3D1EC80B670040C2BA /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		FF3C5D3F1EC811580040C2BA /* TrailTestB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailTestB.swift; sourceTree = "<group>"; };
+		FF3C5D411EC8D3890040C2BA /* TestBNumbers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestBNumbers.txt; sourceTree = "<group>"; };
+		FF3C5D431EC8D4F20040C2BA /* TestBLetters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestBLetters.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FF252B5D1EC7A59A00F97BCF /* Trail Making Test */,
+				FF3C5D3C1EC7E2D70040C2BA /* Coordinates */,
 				FF252B781EC7A59B00F97BCF /* Trail Making TestTests */,
 				FF252B831EC7A59B00F97BCF /* Trail Making TestUITests */,
 				FF252B5C1EC7A59A00F97BCF /* Products */,
@@ -105,13 +114,14 @@
 			children = (
 				FF252B5E1EC7A59A00F97BCF /* AppDelegate.swift */,
 				FF252B601EC7A59A00F97BCF /* GameScene.sks */,
-				FF252B621EC7A59A00F97BCF /* Actions.sks */,
-				FF252B641EC7A59A00F97BCF /* GameScene.swift */,
+				FF252B641EC7A59A00F97BCF /* TrailTestA.swift */,
+				FF3C5D3F1EC811580040C2BA /* TrailTestB.swift */,
 				FF252B661EC7A59A00F97BCF /* GameViewController.swift */,
+				FF3C5D3D1EC80B670040C2BA /* MenuScene.swift */,
 				FF252B681EC7A59A00F97BCF /* Main.storyboard */,
-				FF252B6B1EC7A59A00F97BCF /* Assets.xcassets */,
 				FF252B6D1EC7A59A00F97BCF /* LaunchScreen.storyboard */,
 				FF252B701EC7A59A00F97BCF /* Info.plist */,
+				FF3C5D361EC7DECD0040C2BA /* Nodes.xcassets */,
 			);
 			path = "Trail Making Test";
 			sourceTree = "<group>";
@@ -132,6 +142,16 @@
 				FF252B861EC7A59B00F97BCF /* Info.plist */,
 			);
 			path = "Trail Making TestUITests";
+			sourceTree = "<group>";
+		};
+		FF3C5D3C1EC7E2D70040C2BA /* Coordinates */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C5D3A1EC7E2C70040C2BA /* TestA.txt */,
+				FF3C5D411EC8D3890040C2BA /* TestBNumbers.txt */,
+				FF3C5D431EC8D4F20040C2BA /* TestBLetters.txt */,
+			);
+			name = Coordinates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +264,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3C5D3B1EC7E2C70040C2BA /* TestA.txt in Resources */,
 				FF252B6A1EC7A59A00F97BCF /* Main.storyboard in Resources */,
+				FF3C5D421EC8D3890040C2BA /* TestBNumbers.txt in Resources */,
 				FF252B611EC7A59A00F97BCF /* GameScene.sks in Resources */,
-				FF252B6C1EC7A59A00F97BCF /* Assets.xcassets in Resources */,
+				FF3C5D441EC8D4F20040C2BA /* TestBLetters.txt in Resources */,
 				FF252B6F1EC7A59A00F97BCF /* LaunchScreen.storyboard in Resources */,
-				FF252B631EC7A59A00F97BCF /* Actions.sks in Resources */,
+				FF3C5D371EC7DECD0040C2BA /* Nodes.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF252B651EC7A59A00F97BCF /* GameScene.swift in Sources */,
+				FF252B651EC7A59A00F97BCF /* TrailTestA.swift in Sources */,
+				FF3C5D3E1EC80B670040C2BA /* MenuScene.swift in Sources */,
 				FF252B671EC7A59A00F97BCF /* GameViewController.swift in Sources */,
 				FF252B5F1EC7A59A00F97BCF /* AppDelegate.swift in Sources */,
+				FF3C5D401EC811580040C2BA /* TrailTestB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HK92P9LX5B;
 				INFOPLIST_FILE = "Trail Making Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -442,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HK92P9LX5B;
 				INFOPLIST_FILE = "Trail Making Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +554,7 @@
 				FF252B8B1EC7A59B00F97BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF252B8C1EC7A59B00F97BCF /* Build configuration list for PBXNativeTarget "Trail Making TestTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +563,7 @@
 				FF252B8E1EC7A59B00F97BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF252B8F1EC7A59B00F97BCF /* Build configuration list for PBXNativeTarget "Trail Making TestUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +572,7 @@
 				FF252B911EC7A59B00F97BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
