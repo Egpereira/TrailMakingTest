@@ -133,6 +133,7 @@ class TrailTestB: SKScene {
                         
                         line.removeFromParent()
                         anchor.removeFromParent()
+                        print("Test Finished")
                         let menuScene = MenuScene(size: (view?.bounds.size)!)
                         let transition = SKTransition.fade(withDuration: 1)
                         view?.presentScene(menuScene, transition: transition)
